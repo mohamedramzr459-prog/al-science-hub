@@ -22,7 +22,7 @@ const en = {
 
   searchPlaceholder: 'Search subjects, papers, videos…',
   searchButton: 'Search',
-  searchHint: 'For now, search finds subjects. Lessons, papers and videos become searchable in later stages.',
+  searchHint: 'Search finds subjects here. To search papers and notes, open the Papers page.',
 
   subjectsTitle: 'Subjects',
   gradeLabel: 'Grade',
@@ -32,7 +32,7 @@ const en = {
   viewAll: 'View all',
   notFound: 'Subject not found.',
   backToSubjects: '← Subjects',
-  syllabusNote: 'Units and lessons will follow the NIE A/L syllabus and will be added in Stage 2.',
+  syllabusNote: 'Notes and papers are added by link and always show their original source. Units appear as items are added.',
   resLessons: 'Lessons and notes',
 
   continueTitle: 'Continue learning',
@@ -60,6 +60,27 @@ const en = {
   languageLabel: 'Language',
   footerAbout: 'A learning platform for Sri Lankan G.C.E. Advanced Level students.',
   footerNote: 'Papers and videos always link back to their original sources.',
+
+  navNotes: 'Notes',
+  libPapersTitle: 'Past papers and term tests',
+  libIntro: 'Every item links to its original source. Items are added by the site owner; nothing is made up.',
+  libSearchPlaceholder: 'Search title, unit, source…',
+  filterSubject: 'Subject',
+  filterUnit: 'Unit',
+  filterYear: 'Year',
+  filterType: 'Type',
+  filterAll: 'All',
+  clearFilters: 'Clear filters',
+  kindNote: 'Note',
+  kindPastPaper: 'Past paper',
+  kindTermTest: 'Term test',
+  sourceLabel: 'Source',
+  openSource: 'Open original source',
+  itemsLabel: 'items',
+  libEmpty: 'Nothing has been added here yet. Items are added by link, always with their original source.',
+  libNoMatch: 'No item matches these filters.',
+  unitsTitle: 'Units',
+  nothingYet: 'Nothing added yet',
 };
 
 export type Translations = typeof en;
@@ -81,7 +102,7 @@ const ta: Translations = {
 
   searchPlaceholder: 'பாடம், வினாத்தாள், காணொளி தேடுக…',
   searchButton: 'தேடு',
-  searchHint: 'தற்போது பாடங்களை மட்டும் தேடலாம். பாடக்குறிப்புகள், வினாத்தாள்கள், காணொளிகள் பின்னர் தேடலில் சேர்க்கப்படும்.',
+  searchHint: 'இங்கு பாடங்களைத் தேடலாம். வினாத்தாள்கள், குறிப்புகளைத் தேட "வினாத்தாள்கள்" பக்கத்தைத் திறக்கவும்.',
 
   subjectsTitle: 'பாடங்கள்',
   gradeLabel: 'தரம்',
@@ -91,7 +112,7 @@ const ta: Translations = {
   viewAll: 'அனைத்தையும் பார்க்க',
   notFound: 'பாடம் கிடைக்கவில்லை.',
   backToSubjects: '← பாடங்கள்',
-  syllabusNote: 'அலகுகளும் பாடங்களும் NIE உயர்தரப் பாடத்திட்டத்தைப் பின்பற்றி 2ஆம் கட்டத்தில் சேர்க்கப்படும்.',
+  syllabusNote: 'குறிப்புகளும் வினாத்தாள்களும் இணைப்பாகச் சேர்க்கப்படும்; எப்போதும் அவற்றின் மூலத்தைக் காட்டும். பதிவுகள் சேர்க்கப்படும்போது அலகுகள் தோன்றும்.',
   resLessons: 'பாடங்களும் குறிப்புகளும்',
 
   continueTitle: 'கற்றலைத் தொடருங்கள்',
@@ -119,6 +140,27 @@ const ta: Translations = {
   languageLabel: 'மொழி',
   footerAbout: 'இலங்கை க.பொ.த. உயர்தர மாணவர்களுக்கான கற்றல் தளம்.',
   footerNote: 'வினாத்தாள்களும் காணொளிகளும் எப்போதும் அவற்றின் மூல இணைப்பைக் காட்டும்.',
+
+  navNotes: 'குறிப்புகள்',
+  libPapersTitle: 'கடந்த கால வினாத்தாள்களும் தவணைப் பரீட்சைகளும்',
+  libIntro: 'ஒவ்வொரு பதிவும் அதன் மூல இணைப்பைக் காட்டும். உள்ளடக்கம் தள உரிமையாளரால் சேர்க்கப்படுகிறது; எதுவும் கற்பனையாக உருவாக்கப்படுவதில்லை.',
+  libSearchPlaceholder: 'தலைப்பு, அலகு, மூலம் தேடுக…',
+  filterSubject: 'பாடம்',
+  filterUnit: 'அலகு',
+  filterYear: 'ஆண்டு',
+  filterType: 'வகை',
+  filterAll: 'அனைத்தும்',
+  clearFilters: 'வடிகட்டிகளை நீக்கு',
+  kindNote: 'குறிப்பு',
+  kindPastPaper: 'கடந்த கால வினாத்தாள்',
+  kindTermTest: 'தவணைப் பரீட்சை',
+  sourceLabel: 'மூலம்',
+  openSource: 'மூலத்தைத் திறக்க',
+  itemsLabel: 'பதிவுகள்',
+  libEmpty: 'இங்கு இன்னும் எதுவும் சேர்க்கப்படவில்லை. பதிவுகள் இணைப்பாகச் சேர்க்கப்படும்; எப்போதும் மூலத்துடன்.',
+  libNoMatch: 'இந்த வடிகட்டிகளுக்குப் பொருந்தும் பதிவு இல்லை.',
+  unitsTitle: 'அலகுகள்',
+  nothingYet: 'இன்னும் எதுவும் இல்லை',
 };
 
 const si: Translations = {
@@ -137,7 +179,7 @@ const si: Translations = {
 
   searchPlaceholder: 'විෂය, ප්‍රශ්න පත්‍ර, වීඩියෝ සොයන්න…',
   searchButton: 'සොයන්න',
-  searchHint: 'දැනට සොයාගත හැක්කේ විෂයන් පමණි. පාඩම්, ප්‍රශ්න පත්‍ර සහ වීඩියෝ පසුව සෙවුමට එක් කෙරේ.',
+  searchHint: 'මෙහිදී විෂයන් සොයා ගත හැක. ප්‍රශ්න පත්‍ර සහ සටහන් සෙවීමට "ප්‍රශ්න පත්‍ර" පිටුව විවෘත කරන්න.',
 
   subjectsTitle: 'විෂයන්',
   gradeLabel: 'ශ්‍රේණිය',
@@ -147,7 +189,7 @@ const si: Translations = {
   viewAll: 'සියල්ල බලන්න',
   notFound: 'විෂය හමු නොවීය.',
   backToSubjects: '← විෂයන්',
-  syllabusNote: 'ඒකක සහ පාඩම් NIE උසස් පෙළ විෂය නිර්දේශය අනුව 2 වන අදියරේදී එක් කෙරේ.',
+  syllabusNote: 'සටහන් සහ ප්‍රශ්න පත්‍ර සබැඳියෙන් එක් කෙරේ; ඒවායේ මුල් මූලාශ්‍රය සැමවිටම පෙන්වයි. අයිතම එක් කරන විට ඒකක දිස්වේ.',
   resLessons: 'පාඩම් සහ සටහන්',
 
   continueTitle: 'ඉගෙනීම දිගටම කරගෙන යන්න',
@@ -175,6 +217,27 @@ const si: Translations = {
   languageLabel: 'භාෂාව',
   footerAbout: 'ශ්‍රී ලංකා අ.පො.ස. උසස් පෙළ සිසුන් සඳහා ඉගෙනුම් වේදිකාවක්.',
   footerNote: 'ප්‍රශ්න පත්‍ර සහ වීඩියෝ සැමවිටම ඒවායේ මුල් මූලාශ්‍රයට සම්බන්ධ වේ.',
+
+  navNotes: 'සටහන්',
+  libPapersTitle: 'අතීත ප්‍රශ්න පත්‍ර සහ වාර පරීක්ෂණ',
+  libIntro: 'සෑම අයිතමයක්ම එහි මුල් මූලාශ්‍රයට සම්බන්ධ වේ. අයිතම එක් කරන්නේ අඩවි හිමිකරු විසිනි; කිසිවක් අනුමානයෙන් නිර්මාණය නොකෙරේ.',
+  libSearchPlaceholder: 'මාතෘකාව, ඒකකය, මූලාශ්‍රය සොයන්න…',
+  filterSubject: 'විෂය',
+  filterUnit: 'ඒකකය',
+  filterYear: 'වර්ෂය',
+  filterType: 'වර්ගය',
+  filterAll: 'සියල්ල',
+  clearFilters: 'පෙරහන් ඉවත් කරන්න',
+  kindNote: 'සටහන',
+  kindPastPaper: 'අතීත ප්‍රශ්න පත්‍රය',
+  kindTermTest: 'වාර පරීක්ෂණය',
+  sourceLabel: 'මූලාශ්‍රය',
+  openSource: 'මුල් මූලාශ්‍රය විවෘත කරන්න',
+  itemsLabel: 'අයිතම',
+  libEmpty: 'මෙහි තවම කිසිවක් එක් කර නැත. අයිතම සබැඳියෙන් එක් කෙරේ; සැමවිටම මුල් මූලාශ්‍රය සමඟ.',
+  libNoMatch: 'මෙම පෙරහන් වලට ගැළපෙන අයිතමයක් නැත.',
+  unitsTitle: 'ඒකක',
+  nothingYet: 'තවම කිසිවක් නැත',
 };
 
 export const translations: Record<Language, Translations> = { en, ta, si };
