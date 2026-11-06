@@ -1,0 +1,180 @@
+export type Language = 'ta' | 'si' | 'en';
+
+export const LANGUAGES: { code: Language; label: string }[] = [
+  { code: 'ta', label: 'தமிழ்' },
+  { code: 'si', label: 'සිංහල' },
+  { code: 'en', label: 'English' },
+];
+
+const en = {
+  appName: 'Sri Lankan A/L Science Hub',
+  appShort: 'A/L Science Hub',
+  tagline: 'Quality A/L learning in Tamil, Sinhala and English',
+  founded: 'Founded by Asjadh Rilwan',
+
+  navHome: 'Home',
+  navSubjects: 'Subjects',
+  navPapers: 'Papers',
+  navVideos: 'Videos',
+  navAi: 'AI Tutor',
+  navPlanner: 'Planner',
+  navDashboard: 'My Page',
+
+  searchPlaceholder: 'Search subjects, papers, videos…',
+  searchButton: 'Search',
+  searchHint: 'For now, search finds subjects. Lessons, papers and videos become searchable in later stages.',
+
+  subjectsTitle: 'Subjects',
+  gradeLabel: 'Grade',
+  grade12: 'Grade 12',
+  grade13: 'Grade 13',
+  noResults: 'No subject matches your search.',
+  viewAll: 'View all',
+  notFound: 'Subject not found.',
+  backToSubjects: '← Subjects',
+  syllabusNote: 'Units and lessons will follow the NIE A/L syllabus and will be added in Stage 2.',
+  resLessons: 'Lessons and notes',
+
+  continueTitle: 'Continue learning',
+  videosTitle: 'Recent video classes',
+  papersTitle: 'Latest examination papers',
+  termTitle: 'Term-test collection',
+  emptyList: 'Nothing added yet. This will fill up as we build the next stages.',
+
+  comingSoon: 'Coming soon',
+  stageLabel: 'Stage',
+  papersText: 'The past-paper and term-test library will be built in Stage 2. Every paper will show its original source.',
+  videosText: 'The three-language video class library will be built in Stage 3.',
+  aiText: 'The AI tutor will be built in Stage 4, using a secure backend so no secret keys are exposed.',
+  plannerText: 'The study planner and progress tracking will be built in Stage 6 together with student accounts.',
+
+  dashboardTitle: 'My page',
+  dashNote: 'Student accounts arrive in Stage 6. Your real progress will appear here; nothing is made up in the meantime.',
+  dashProgress: 'Topics completed',
+  dashStudy: 'Study time',
+  dashSaved: 'Saved items',
+  dashQuiz: 'Practice results',
+
+  themeToLight: 'Switch to light mode',
+  themeToDark: 'Switch to dark mode',
+  languageLabel: 'Language',
+  footerAbout: 'A learning platform for Sri Lankan G.C.E. Advanced Level students.',
+  footerNote: 'Papers and videos always link back to their original sources.',
+};
+
+export type Translations = typeof en;
+export type TKey = keyof Translations;
+
+const ta: Translations = {
+  appName: 'Sri Lankan A/L Science Hub',
+  appShort: 'A/L Science Hub',
+  tagline: 'தமிழ், சிங்களம், ஆங்கிலம் ஆகிய மொழிகளில் தரமான உயர்தரக் கற்றல்',
+  founded: 'நிறுவியவர்: Asjadh Rilwan',
+
+  navHome: 'முகப்பு',
+  navSubjects: 'பாடங்கள்',
+  navPapers: 'வினாத்தாள்கள்',
+  navVideos: 'காணொளிகள்',
+  navAi: 'AI ஆசிரியர்',
+  navPlanner: 'படிப்புத் திட்டம்',
+  navDashboard: 'எனது பக்கம்',
+
+  searchPlaceholder: 'பாடம், வினாத்தாள், காணொளி தேடுக…',
+  searchButton: 'தேடு',
+  searchHint: 'தற்போது பாடங்களை மட்டும் தேடலாம். பாடக்குறிப்புகள், வினாத்தாள்கள், காணொளிகள் பின்னர் தேடலில் சேர்க்கப்படும்.',
+
+  subjectsTitle: 'பாடங்கள்',
+  gradeLabel: 'தரம்',
+  grade12: 'தரம் 12',
+  grade13: 'தரம் 13',
+  noResults: 'உங்கள் தேடலுக்குப் பொருந்தும் பாடம் இல்லை.',
+  viewAll: 'அனைத்தையும் பார்க்க',
+  notFound: 'பாடம் கிடைக்கவில்லை.',
+  backToSubjects: '← பாடங்கள்',
+  syllabusNote: 'அலகுகளும் பாடங்களும் NIE உயர்தரப் பாடத்திட்டத்தைப் பின்பற்றி 2ஆம் கட்டத்தில் சேர்க்கப்படும்.',
+  resLessons: 'பாடங்களும் குறிப்புகளும்',
+
+  continueTitle: 'கற்றலைத் தொடருங்கள்',
+  videosTitle: 'அண்மைய காணொளி வகுப்புகள்',
+  papersTitle: 'அண்மைய பரீட்சை வினாத்தாள்கள்',
+  termTitle: 'தவணைப் பரீட்சை வினாத்தாள் தொகுப்பு',
+  emptyList: 'இன்னும் எதுவும் சேர்க்கப்படவில்லை. அடுத்த கட்டங்களில் இது நிரப்பப்படும்.',
+
+  comingSoon: 'விரைவில்',
+  stageLabel: 'கட்டம்',
+  papersText: 'கடந்த கால வினாத்தாள் மற்றும் தவணைப் பரீட்சைத் தொகுப்பு 2ஆம் கட்டத்தில் உருவாக்கப்படும். ஒவ்வொரு வினாத்தாளிலும் அதன் மூலம் காட்டப்படும்.',
+  videosText: 'மூன்று மொழி காணொளி வகுப்புத் தொகுப்பு 3ஆம் கட்டத்தில் உருவாக்கப்படும்.',
+  aiText: 'AI ஆசிரியர் 4ஆம் கட்டத்தில் பாதுகாப்பான பின்னணிச் சேவையுடன் உருவாக்கப்படும்.',
+  plannerText: 'படிப்புத் திட்டமும் முன்னேற்றக் கண்காணிப்பும் மாணவர் கணக்குகளுடன் 6ஆம் கட்டத்தில் உருவாக்கப்படும்.',
+
+  dashboardTitle: 'எனது பக்கம்',
+  dashNote: 'மாணவர் கணக்குகள் 6ஆம் கட்டத்தில் வரும். உங்கள் உண்மையான முன்னேற்றம் இங்கே தோன்றும்.',
+  dashProgress: 'முடித்த தலைப்புகள்',
+  dashStudy: 'படித்த நேரம்',
+  dashSaved: 'சேமித்தவை',
+  dashQuiz: 'பயிற்சி முடிவுகள்',
+
+  themeToLight: 'ஒளி பயன்முறைக்கு மாறு',
+  themeToDark: 'இருள் பயன்முறைக்கு மாறு',
+  languageLabel: 'மொழி',
+  footerAbout: 'இலங்கை க.பொ.த. உயர்தர மாணவர்களுக்கான கற்றல் தளம்.',
+  footerNote: 'வினாத்தாள்களும் காணொளிகளும் எப்போதும் அவற்றின் மூல இணைப்பைக் காட்டும்.',
+};
+
+const si: Translations = {
+  appName: 'Sri Lankan A/L Science Hub',
+  appShort: 'A/L Science Hub',
+  tagline: 'දෙමළ, සිංහල සහ ඉංග්‍රීසි භාෂාවලින් ගුණාත්මක උසස් පෙළ ඉගෙනීම',
+  founded: 'ආරම්භක: Asjadh Rilwan',
+
+  navHome: 'මුල් පිටුව',
+  navSubjects: 'විෂයන්',
+  navPapers: 'ප්‍රශ්න පත්‍ර',
+  navVideos: 'වීඩියෝ',
+  navAi: 'AI ගුරුවරයා',
+  navPlanner: 'අධ්‍යයන සැලසුම',
+  navDashboard: 'මගේ පිටුව',
+
+  searchPlaceholder: 'විෂය, ප්‍රශ්න පත්‍ර, වීඩියෝ සොයන්න…',
+  searchButton: 'සොයන්න',
+  searchHint: 'දැනට සොයාගත හැක්කේ විෂයන් පමණි. පාඩම්, ප්‍රශ්න පත්‍ර සහ වීඩියෝ පසුව සෙවුමට එක් කෙරේ.',
+
+  subjectsTitle: 'විෂයන්',
+  gradeLabel: 'ශ්‍රේණිය',
+  grade12: '12 ශ්‍රේණිය',
+  grade13: '13 ශ්‍රේණිය',
+  noResults: 'ඔබේ සෙවුමට ගැළපෙන විෂයක් නැත.',
+  viewAll: 'සියල්ල බලන්න',
+  notFound: 'විෂය හමු නොවීය.',
+  backToSubjects: '← විෂයන්',
+  syllabusNote: 'ඒකක සහ පාඩම් NIE උසස් පෙළ විෂය නිර්දේශය අනුව 2 වන අදියරේදී එක් කෙරේ.',
+  resLessons: 'පාඩම් සහ සටහන්',
+
+  continueTitle: 'ඉගෙනීම දිගටම කරගෙන යන්න',
+  videosTitle: 'මෑත වීඩියෝ පන්ති',
+  papersTitle: 'නවතම විභාග ප්‍රශ්න පත්‍ර',
+  termTitle: 'වාර පරීක්ෂණ ප්‍රශ්න පත්‍ර එකතුව',
+  emptyList: 'තවම කිසිවක් එක් කර නැත. ඉදිරි අදියරවලදී මෙය පිරවෙනු ඇත.',
+
+  comingSoon: 'ඉක්මනින්',
+  stageLabel: 'අදියර',
+  papersText: 'අතීත ප්‍රශ්න පත්‍ර සහ වාර පරීක්ෂණ එකතුව 2 වන අදියරේදී ගොඩනඟනු ඇත. සෑම ප්‍රශ්න පත්‍රයකම මුල් මූලාශ්‍රය පෙන්වනු ඇත.',
+  videosText: 'භාෂා තුනෙන් වීඩියෝ පන්ති එකතුව 3 වන අදියරේදී ගොඩනඟනු ඇත.',
+  aiText: 'AI ගුරුවරයා 4 වන අදියරේදී ආරක්ෂිත පසුබිම් සේවාවක් සමඟ ගොඩනඟනු ඇත.',
+  plannerText: 'අධ්‍යයන සැලසුම සහ ප්‍රගති නිරීක්ෂණය ශිෂ්‍ය ගිණුම් සමඟ 6 වන අදියරේදී ගොඩනඟනු ඇත.',
+
+  dashboardTitle: 'මගේ පිටුව',
+  dashNote: 'ශිෂ්‍ය ගිණුම් 6 වන අදියරේදී පැමිණේ. ඔබේ සැබෑ ප්‍රගතිය මෙහි දිස්වනු ඇත.',
+  dashProgress: 'සම්පූර්ණ කළ මාතෘකා',
+  dashStudy: 'අධ්‍යයන කාලය',
+  dashSaved: 'සුරැකි අයිතම',
+  dashQuiz: 'පුහුණු ප්‍රතිඵල',
+
+  themeToLight: 'ආලෝක මාදිලියට මාරු වන්න',
+  themeToDark: 'අඳුරු මාදිලියට මාරු වන්න',
+  languageLabel: 'භාෂාව',
+  footerAbout: 'ශ්‍රී ලංකා අ.පො.ස. උසස් පෙළ සිසුන් සඳහා ඉගෙනුම් වේදිකාවක්.',
+  footerNote: 'ප්‍රශ්න පත්‍ර සහ වීඩියෝ සැමවිටම ඒවායේ මුල් මූලාශ්‍රයට සම්බන්ධ වේ.',
+};
+
+export const translations: Record<Language, Translations> = { en, ta, si };
